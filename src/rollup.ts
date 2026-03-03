@@ -151,11 +151,14 @@ export async function runMonthlyRollup(): Promise<void> {
   const weeklyDates = monthDates.filter((d) => fs.existsSync(path.join(DIGESTS_DIR, d, "ai-weekly.md")));
 
   let sourceDigests: Record<string, string>;
-  let sourceLabel: string;
+  let sourceLabel: { zh: string; en: string };
 
   if (weeklyDates.length >= 2) {
     // Use weekly reports
-    sourceLabel = `${weeklyDates.length} 份周报`;
+    sourceLabel = {
+      zh: `${weeklyDates.length} 份周报`,
+      en: `${weeklyDates.length} weekly reports`,
+    };
     sourceDigests = {};
     for (const date of weeklyDates) {
       const content = readWeeklyDigest(date);
@@ -164,7 +167,10 @@ export async function runMonthlyRollup(): Promise<void> {
   } else {
     // Sample daily reports: every 4th day, max 10
     const sampled = monthDates.filter((_, i) => i % 4 === 0).slice(0, 10);
-    sourceLabel = `${sampled.length} 份日报（每4日采样）`;
+    sourceLabel = {
+      zh: `${sampled.length} 份日报（每4日采样）`,
+      en: `${sampled.length} daily reports (sampled every 4 days)`,
+    };
     sourceDigests = {};
     for (const date of sampled) {
       const content = readDailyDigest(date);
@@ -177,7 +183,7 @@ export async function runMonthlyRollup(): Promise<void> {
     return;
   }
 
-  console.log(`[monthly] Source: ${sourceLabel}`);
+  console.log(`[monthly] Source: ${sourceLabel.zh}`);
 
   // Generate ZH and EN in parallel
   console.log("[monthly] Calling LLM for ZH and EN monthly reports in parallel...");
@@ -191,14 +197,14 @@ export async function runMonthlyRollup(): Promise<void> {
 
   const zhContent =
     `# AI 工具生态月报 ${monthStr}\n\n` +
-    `> 数据来源: ${sourceLabel} | 生成时间: ${utcStr} UTC\n\n` +
+    `> 数据来源: ${sourceLabel.zh} | 生成时间: ${utcStr} UTC\n\n` +
     `---\n\n` +
     zhSummary +
     footer;
 
   const enContent =
     `# AI Tools Ecosystem Monthly Report ${monthStr}\n\n` +
-    `> Sources: ${sourceLabel.replace("份", "").replace("周报", "weekly reports").replace("日报（每4日采样）", "daily reports (sampled every 4 days)")} | Generated: ${utcStr} UTC\n\n` +
+    `> Sources: ${sourceLabel.en} | Generated: ${utcStr} UTC\n\n` +
     `---\n\n` +
     enSummary +
     enFooter;

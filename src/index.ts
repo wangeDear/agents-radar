@@ -431,34 +431,28 @@ async function saveWebReport(
 
       const fileName = lang === "en" ? "ai-web-en.md" : "ai-web.md";
 
-      let webContent: string;
-      if (lang === "en") {
-        const mode = isFirstRun ? "First full crawl" : "Today's update";
-        webContent =
-          `# Official AI Content Report ${dateStr}\n\n` +
-          `> ${mode} | New content: ${totalNew} articles | Generated: ${utcStr} UTC\n\n` +
-          `Sources:\n` +
-          `- Anthropic: [anthropic.com](https://www.anthropic.com) — ` +
-          `${anthropicNew} new articles (sitemap total: ${anthropicTotal})\n` +
-          `- OpenAI: [openai.com](https://openai.com) — ` +
-          `${openaiNew} new articles (sitemap total: ${openaiTotal})\n\n` +
-          `---\n\n` +
-          webSummary +
-          footer;
-      } else {
-        const mode = isFirstRun ? "首次全量" : "今日更新";
-        webContent =
-          `# AI 官方内容追踪报告 ${dateStr}\n\n` +
-          `> ${mode} | 新增内容: ${totalNew} 篇 | 生成时间: ${utcStr} UTC\n\n` +
-          `数据来源:\n` +
-          `- Anthropic: [anthropic.com](https://www.anthropic.com) — ` +
-          `新增 ${anthropicNew} 篇（sitemap 共 ${anthropicTotal} 条）\n` +
-          `- OpenAI: [openai.com](https://openai.com) — ` +
-          `新增 ${openaiNew} 篇（sitemap 共 ${openaiTotal} 条）\n\n` +
-          `---\n\n` +
-          webSummary +
-          footer;
-      }
+      const t =
+        lang === "en"
+          ? {
+              mode: isFirstRun ? "First full crawl" : "Today's update",
+              title: `# Official AI Content Report ${dateStr}\n\n`,
+              meta: `> ${isFirstRun ? "First full crawl" : "Today's update"} | New content: ${totalNew} articles | Generated: ${utcStr} UTC\n\n`,
+              sources:
+                `Sources:\n` +
+                `- Anthropic: [anthropic.com](https://www.anthropic.com) — ${anthropicNew} new articles (sitemap total: ${anthropicTotal})\n` +
+                `- OpenAI: [openai.com](https://openai.com) — ${openaiNew} new articles (sitemap total: ${openaiTotal})\n\n`,
+            }
+          : {
+              mode: isFirstRun ? "首次全量" : "今日更新",
+              title: `# AI 官方内容追踪报告 ${dateStr}\n\n`,
+              meta: `> ${isFirstRun ? "首次全量" : "今日更新"} | 新增内容: ${totalNew} 篇 | 生成时间: ${utcStr} UTC\n\n`,
+              sources:
+                `数据来源:\n` +
+                `- Anthropic: [anthropic.com](https://www.anthropic.com) — 新增 ${anthropicNew} 篇（sitemap 共 ${anthropicTotal} 条）\n` +
+                `- OpenAI: [openai.com](https://openai.com) — 新增 ${openaiNew} 篇（sitemap 共 ${openaiTotal} 条）\n\n`,
+            };
+
+      const webContent = t.title + t.meta + t.sources + `---\n\n` + webSummary + footer;
 
       console.log(`  Saved ${saveFile(webContent, dateStr, fileName)}`);
 
