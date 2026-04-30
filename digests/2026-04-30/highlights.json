@@ -1,150 +1,142 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code v2.1.123 紧急修复 OAuth 401 漏洞",
-      "Claude Code HERMES.md 计费漏洞获 90+ 点赞引发信任危机",
-      "OpenAI Codex 5 个 Rust alpha 版本密集迭代但 Release note 缺失",
-      "Gemini CLI v0.42.0 实验 AI bot 自主提 PR 出现重复问题",
-      "Kimi CLI 24 小时内 11 个 PR 更新，RalphFlow 架构推进",
-      "OpenCode v1.14.30 紧急修复会话丢失，Effect 架构重构中"
+      "AI CLI 工具全面迈入自主工作流编排阶段",
+      "Claude Code 出现计费漏洞引发社区信任危机",
+      "OpenAI Codex 采用 Rust 语言进行深度架构重构",
+      "社区聚焦 DeepSeek V4 等思维链模型的参数适配",
+      "工具权限管理从“允许一切”向精细化安全沙箱转型",
+      "跨系统环境与包管理器差异成 AI CLI 核心痛点"
     ],
     "ai-agents": [
-      "OpenClaw v2026.4.27 集成 Codex Computer Use 与 DeepInfra",
-      "OpenClaw 372 个待合并 PR 形成庞大评审队列瓶颈",
-      "OpenClaw Gateway CPU 空转与内存泄漏修复滞后于报告速度",
-      "NanoBot、Hermes Agent 等 13 个项目覆盖 OpenClaw 生态",
-      "OpenClaw MCP fail-closed 安全模型强化回应 exec 审批担忧",
-      "Clawsweeper bot 修复 config-aware auth evidence 路径 bug"
+      "OpenClaw 单日处理近千 Issues 爆发式活跃",
+      "v2026.4.27 引入 Codex 模式增强桌面控制能力",
+      "新增 fail-closed MCP 检查大幅提升桌面安全",
+      "Windows 启动优化：彻底修复 37.5 秒静默等待 Bug",
+      "HTTP 拦截机制实现内部会话历史安全隔离",
+      "社区对跨平台 Clawdbot App 与技能中心呼声极高"
     ],
     "ai-trending": [
-      "Warp 终端单日 +12,822 stars 登顶，Agentic 开发环境爆发",
-      "mattpocock/skills +7,280 stars，个人 Agent 能力资产化成标杆",
-      "obra/superpowers +1,653 stars，提出可落地的智能体开发范式",
-      "ComposioHQ/awesome-codex-skills +1,177 stars，Codex 生态扩张",
-      "字节 deer-flow 64,256 stars，长时程 SuperAgent 支持小时级任务",
-      "DeepSeek V4 推理兼容性成全行业紧急技术债务"
+      "Warp 终端爆火单日斩获 1.2 万 Star",
+      "开源生态向构建 Agent 专属技能与边缘环境转移",
+      "mattpocock 沉淀 Claude 技能库单日新增 7 千星",
+      "微软开源前沿语音 AI VibeVoice 聚焦端侧交互",
+      "DeepSeek 转 OpenAI 协议中间件 ds2api 渗透加速",
+      "GitNexus 实现纯浏览器端运行的代码图 RAG 引擎"
     ],
     "ai-web": [
-      "Anthropic 发布 BioMysteryBench 切入生命科学垂直领域",
-      "Anthropic 首次系统评估 Claude 真实科研假设生成能力",
-      "OpenAI 更新 Community Safety 页面但正文不可获取",
-      "Anthropic 用可验证研究构建信任 vs OpenAI 政策承诺叙事",
-      "BioMysteryBench 聚焦文献解读、图表分析、代码编写等工作流",
-      "Anthropic Discovery 团队研究员 Brianna 主导生物信息学基准"
+      "Anthropic 发布生物科研测评 BioMysteryBench",
+      "Claude 瞄准高壁垒医药 B2B 市场展示科研实力",
+      "Anthropic 试图确立 AI 科学界硬核指标定义权",
+      "OpenAI 神秘发布“哥布林”主题创意网页悬念拉满",
+      "OpenAI 战略疑似转向创意叙事与多媒体艺术生态",
+      "AI 巨头战略分化：Anthropic 拼科研，OpenAI 搞创意"
     ],
     "ai-hn": [
-      "Claude Code HERMES.md 计费漏洞 945 分 388 评论成绝对焦点",
-      "OpenAI Codex 系统提示含\"绝不谈论哥布林\"荒诞指令引热议",
-      "AgentPort 开源安全网关获关注，AI 代理安全成新赛道",
-      "结构化输出可靠性基准测试获 48 分 21 评论积极讨论",
-      "David Silver 呼吁回归强化学习本质挑战 LLM 主导范式",
-      "GLM-5 编码代理大规模服务调试经验分享"
+      "微调可诱导对齐大模型吐出版权书籍引发安全忧虑",
+      "Claude Code 提交信息漏洞触发大量异常计费",
+      "传 Anthropic 计划以 9000 亿估值狂揽 500 亿融资",
+      "消息称 OpenAI 已搁浅千亿级 Stargate 算力计划",
+      "开发者急需 AgentPort 等智能体网关提供权限管控",
+      "IBM 发布企业级基础模型 Granite 4.1 系列"
     ],
     "ai-ph": [
-      "SureThing.io 421 票 135 评论，类人沟通体验验证市场吸引力",
-      "MaxHermes by Minimax 106 票，任务驱动技能进化实现终身学习",
-      "Devin for Terminal 89 票 0 评论，离线持续执行重构协作时空",
-      "Actian VectorAI DB 便携式向量数据库瞄准边缘 AI 场景",
-      "AI Agent 赛道超半数产品上榜，从对话工具向自主执行者跃迁",
-      "零评论产品出现反映部分高期待 Agent 尚处早期 Demo 阶段"
+      "Product Hunt 榜单被 Agent 赛道刷屏呈爆发态势",
+      "SureThing.io 打造拟人化 Agent 获超高社区互动",
+      "MaxHermes 技能进化 Agent 实现“越用越懂你”",
+      "Devin 推出支持离线持续执行的终端代理神器",
+      "Actian VectorAI 瞄准边缘 AI 场景的便携向量库",
+      "零评论上榜产品揭示部分高期待 AI 尚处试水阶段"
     ],
     "ai-arxiv": [
-      "递归多智能体系统将循环推理扩展至多智能体协作",
-      "Tsallis 损失连续体解决 RLVR 失效的低初始成功率训练难题",
-      "条件错对齐揭示 RLHF/SFT 可能掩盖而非消除涌现风险",
-      "AI 熟练用户反而承担更多认知负担，2.7 万条对话实证",
-      "潜意学习中隐藏信号可被更强编码，供应链安全警示",
-      "跨语言越狱检测语义码本填补非英语安全机制漏洞"
+      "跨架构蒸馏技术首度打破大语言扩散模型算力门槛",
+      "离散扩散模型被证实具备突破性的联想记忆能力",
+      "统一稀疏注意力与分级内存攻克长文本性能瓶颈",
+      "Select to Think 机制让小模型按需调用大模型",
+      "扁鹊框架实现大规模在线系统的可靠 AI 自动化运维",
+      "FutureWorld 训练环境推动具身智能迈向 4D 物理建模"
     ],
     "ai-hf": [
-      "DeepSeek-V4-Pro 3,237 点赞强势登顶延续 MoE 效率优势",
-      "Qwen3.6 家族 8 席霸榜形成完整生态矩阵",
-      "Gemma-4-31B-it 下载量突破 650 万成最广泛多模态模型",
-      "Uncensored 微调模型下载量持续走高反映可控性需求",
-      "腾讯 HY-World-2.0 3D 世界模型标志多模态向生成纵深",
-      "NVIDIA Nemotron-3-Nano-Omni any-to-any 架构推理模型"
+      "DeepSeek-V4-Pro 登顶开源大模型 SOTA 对话王座",
+      "Google Gemma-4 狂揽 650 万次单周下载量",
+      "阿里 Qwen3.6 推出 MoE 架构大幅提升多模态吞吐率",
+      "GLM-5.1 引入动态稀疏注意力优化长文本对话逻辑",
+      "OpenAI 罕见开源隐私过滤模型成合规应用利器",
+      "LLaDA2.0-Uni 突破界限实现万物皆可互转大一统"
     ],
     "ai-community": [
-      "Google Cloud NEXT '26 刷屏，MCP/A2A 协议成绝对焦点",
-      "Claude + Kollabe MCP 完全替代团队站会流程获 20 赞",
-      "FastAPI + LLM 生产级架构实战项目结构可直接借鉴",
-      "AI 修复 38 个 spec 文件 165 个测试的 E2E 架构重构",
-      "编码代理从 IDE 插件向终端原生工具迁移趋势明确",
-      "移动端\"氛围编程\"工作流探索开源工具链个性化改造"
+      "开发者分享用 AI 彻底重构 Playwright E2E 测试",
+      "实战总结：如何优雅设计带 LLM 功能的 FastAPI 后端",
+      "团队利用 Claude 与 MCP 协议成功终结手动敏捷会议",
+      "隐私至上：开发者拒绝给 Claude 开放家庭服务器 SSH",
+      "填补空白：为 TS 版 MCP 服务端添加 OAuth 2.1 安全层",
+      "残酷真相：1M Token 大模型依旧无法摆脱中间遗忘"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code v2.1.123 shipped with OAuth fix",
-      "OpenAI Codex leaked prompt: 'never talk about goblins'",
-      "Claude Code billing bug: 'HERMES.md' in commits triggers extra charges",
-      "10 hot issues tracked for Claude Code, 10 for Codex",
-      "Kimi Code CLI joins 8-tool AI CLI landscape",
-      "Tools shift from autocomplete to autonomous agent orchestration"
+      "Claude Code v2.1.123 addresses regression issues",
+      "OpenAI Codex v0.126.0 Alpha adds TUI decoupling",
+      "Gemini CLI v0.42.0 Nightly maps AST for subagents",
+      "Copilot CLI v1.0.40 Stable focuses on loop prevention",
+      "Kimi Code adds headless SSH clipboard support",
+      "OpenCode v1.14.30 adds Kimi K2.6 model support"
     ],
     "ai-agents": [
-      "OpenClaw: 500 issues and 500 PRs in 24 hours",
-      "OpenClaw v2026.4.27 adds Codex Computer Use",
-      "OpenClaw merge rate only 25.6%, stability debt rising",
-      "13 projects covered in OpenClaw ecosystem digest",
-      "OpenClaw ships fail-closed MCP checks for Codex mode",
-      "NanoBot, Hermes Agent among 13 active agent projects"
+      "OpenClaw v2026.4.27 adds desktop computer use control",
+      "DeepInfra becomes first-class provider in OpenClaw",
+      "SureThing.io hits 421 votes with human-like reporting",
+      "Actian VectorAI DB brings portable vector data to edge",
+      "MaxHermes agent learns and builds skills from every task",
+      "OpenClaw safety logic updated with fail-closed checks"
     ],
     "ai-trending": [
-      "Warp terminal explodes: +12,822 stars in one day",
-      "Terminal-as-agent-platform emerges as new paradigm",
-      "Microsoft open-sources VibeVoice for frontier voice AI",
-      "Skills frameworks trending: obra/superpowers, mattpocock/skills",
-      "Agent harnesses race to standardize autonomous coding runtimes",
-      "Ollama now supports Kimi-K2.5, GLM-5, gpt-oss"
+      "Warp terminal adds agentic context with 12k+ stars",
+      "ds2api bridges DeepSeek to OpenAI protocols",
+      "vLLM remains industry standard for high-throughput serving",
+      "obra/superpowers creates autonomous skill methodology",
+      "mattpocock/skills extracts real-world Claude capabilities",
+      "Microsoft releases VibeVoice for multimodal audio AI"
     ],
     "ai-web": [
-      "Anthropic publishes BioMysteryBench bioinformatics research",
-      "Anthropic pushes domain-specific scientific AI evaluation",
-      "OpenAI content minimal: only metadata-only safety reference",
-      "Anthropic's 346 sitemap articles vs OpenAI's 793 total",
-      "BioMysteryBench assesses Claude on scientific workflows",
-      "Asymmetry: Anthropic active, OpenAI quiet in this crawl"
+      "Anthropic launches BioMysteryBench for bioinformatics",
+      "OpenAI releases 'Where The Goblins Came From' creative log",
+      "BioMysteryBench tests long-horizon scientific reasoning",
+      "Anthropic shifts focus to domain-specific expert benchmarks",
+      "OpenAI explores the intersection of AI and storytelling",
+      "Anthropic benchmarks move beyond GPQA to professional work"
     ],
     "ai-hn": [
-      "Claude Code 'HERMES.md' billing bug sparks 388 comments",
-      "OpenAI Codex system prompt leaked with goblin directive",
-      "Musk-Altman trial generates unflattering revelations",
-      "New benchmark tests LLMs for deterministic outputs",
-      "AI agents deleting databases in seconds worries developers",
-      "GLM-5 scaling pains shared in rare production postmortem"
-    ],
-    "ai-ph": [
-      "SureThing.io wins with 421 votes for human-like agent reporting",
-      "Top products all feature autonomous agent architectures",
-      "MaxHermes builds self-improving skills from every task",
-      "Actian VectorAI DB brings vector search to edge agents",
-      "Agent orchestration overtakes raw coding assistance",
-      "Trust gap solved by natural language agent reporting"
+      "Anthropic faces billing bugs in new agent tools",
+      "Zig language formalizes resistance to AI contributions",
+      "Fine-tuning bypasses LLM safety filters for copyright",
+      "New benchmark tests LLMs for deterministic JSON outputs",
+      "IBM releases Granite 4.1 family of foundation models",
+      "Elon Musk trial vs OpenAI drives community discussion"
     ],
     "ai-arxiv": [
-      "Recursive Multi-Agent Systems paper extends looped computation",
-      "Training reasoning models on Tsallis Loss Continuum published",
-      "Safety research: common interventions mask emergent misalignment",
-      "Compound AI system infrastructure matures for production",
-      "Cross-lingual jailbreak vulnerabilities addressed in new papers",
-      "Agent collaboration itself proposed as scalable reasoning axis"
+      "TIDE enables cross-architecture distillation for dLLMs",
+      "Research proves diffusion models act as creative memory",
+      "Zhao et al. propose scalable long-context LLM serving",
+      "Unified 4D world models emerge for robotic automation",
+      "Study defines 'Local Sufficiency' for small model logic",
+      "Hierarchical memory system enables CPU-offloaded KV caches"
     ],
     "ai-hf": [
-      "DeepSeek-V4-Pro leads with 3,237 weekly likes",
-      "Google's Gemma-4-31B-it hits 6.5M downloads",
-      "Qwen 3.6 family places four variants in top 30",
-      "Tencent's HY-World-2.0 introduces 3D world model category",
-      "inclusionAI's LLaDA2.0-Uni pushes any-to-any architecture",
-      "Unsloth contributes three heavily-downloaded GGUF variants"
+      "DeepSeek-V4-Pro leads charts with high-efficiency MoE",
+      "Google Gemma 4-31B hits 6.5 million weekly downloads",
+      "Qwen 3.6 series signals new generation of MoE models",
+      "Mistral-Medium-3.5-128B targets enterprise long-context",
+      "GLM-5.1 utilizes Dynamic Sparse Attention for coherence",
+      "NVIDIA Omni models shift industry to multimodal reasoning"
     ],
     "ai-community": [
-      "MCP protocol expands beyond coding into team workflows",
-      "Google Cloud NEXT '26 sparks MCP and A2A challenge submissions",
-      "Vibe coding from phones becomes real developer workflow",
-      "FastAPI + LLM integration patterns shared from production",
-      "Claude + Kollabe MCP replaces manual standups",
-      "Gap between impressive demos and deployable systems debated"
+      "Google Cloud NEXT '26 debuts GKE Agent Sandbox",
+      "Model Context Protocol (MCP) automates team standups",
+      "Developers use Agentic Development Kit for self-correction",
+      "Vibe coding trend sees full app deployment from mobile",
+      "Teams use AI to refactor Playwright E2E test suites",
+      "Concerns rise over AI agent SSH access to production"
     ]
   }
 }
